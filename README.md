@@ -180,9 +180,9 @@ Figure 7. Correlation heatmap demonstrating variability in correlated feature pa
 
 •	Model Performance:
      
-     o	Tree-based models like Random Forests and Gradient Boosting are less sensitive to multicollinearity and can handle correlated features effectively.
+    o	Tree-based models like Random Forests and Gradient Boosting are less sensitive to multicollinearity and can handle correlated features effectively.
 
-     o	For linear models, feature selection or regularisation techniques are critical to mitigate the impact of multicollinearity.
+    o	For linear models, feature selection or regularisation techniques are critical to mitigate the impact of multicollinearity.
 
 
 
