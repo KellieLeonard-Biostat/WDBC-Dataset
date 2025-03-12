@@ -179,9 +179,7 @@ Figure 7. Correlation heatmap demonstrating variability in correlated feature pa
 •	Dimensionality Reduction: PCA or other methods can reduce the impact of multicollinearity by transforming correlated features into uncorrelated components while preserving variance.
 
 •	Model Performance:
-     
     o	Tree-based models like Random Forests and Gradient Boosting are less sensitive to multicollinearity and can handle correlated features effectively.
-
     o	For linear models, feature selection or regularisation techniques are critical to mitigate the impact of multicollinearity.
 
 
