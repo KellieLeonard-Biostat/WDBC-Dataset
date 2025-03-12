@@ -2,7 +2,8 @@
 
 **Introduction**
 Breast cancer remains one of the most prevalent and deadly cancers worldwide, underscoring the critical importance of early detection in improving patient outcomes. Advances in diagnostic tools, including the application of machine learning models, have significantly enhanced our ability to distinguish between benign and malignant breast tumours with accuracy and speed.
-This report delves into the Wisconsin Diagnostic Breast Cancer (WDBC) dataset, which is derived from Fine Needle Aspiration (FNA) samples of breast tissue. It focuses on cell nuclei characteristics such as size, shape, texture, and other morphological properties. These features provide crucial insights into the distinction between benign and malignant tumours. By analysing these features, this report explores how machine learning models can effectively classify tumours, highlighting the potential for computational tools to aid in early breast cancer diagnosis.
+
+This report delves into the Wisconsin Diagnostic Breast Cancer (WDBC) dataset, which is derived from Fine Needle Aspiration (FNA) samples of breast tissue. It focuses on cell nuclei characteristics such as size, shape, texture, and other morphological properties. These features provide crucial insights into the distinction between benign and malignant tumours. By analysing these features, this report explores how machine learning models could effectively classify tumours, highlighting the potential for computational tools to aid in early breast cancer diagnosis.
 
  ![image](https://github.com/user-attachments/assets/a09abf34-0a95-47b2-8124-efd004564f2f)
 
@@ -171,39 +172,30 @@ A heatmap visualisation of the correlation matrix provided a clear view of relat
 Figure 7. Correlation heatmap demonstrating variability in correlated feature pairs.
 
 
-**Machine Learning Model** 
-With preprocessed features, a classification model is built to predict whether a tumour is malignant or benign. Initially, logistic regression is used, followed by an exploration of other algorithms like decision trees or random forests.
-1.	Model Training and Evaluation: 
-o	The data is split into training and testing sets.
-o	The model is trained on the training set and evaluated using performance metrics such as accuracy, precision, recall, and F1-score.
-o	The confusion matrix is visualized to assess classification performance.
-
-Model Performance Metrics
-•	Accuracy: 22.81%
-•	Precision: 22.81%
-•	Recall: 100%
-•	F1-Score: 0.37%
-
 **Implications for Predictive Modelling**
-•	Feature Engineering:
-o	Highly correlated features may need to be combined or reduced to avoid redundancy. For instance, aggregating size-related features into a single composite score could streamline the model.
-•	Dimensionality Reduction:
-o	PCA or other methods can reduce the impact of multicollinearity by transforming correlated features into uncorrelated components while preserving variance.
+
+•	Feature Engineering: Highly correlated features may need to be combined or reduced to avoid redundancy. For instance, aggregating size-related features into a single composite score could streamline the model.
+
+•	Dimensionality Reduction: PCA or other methods can reduce the impact of multicollinearity by transforming correlated features into uncorrelated components while preserving variance.
+
 •	Model Performance:
-o	Tree-based models like Random Forests and Gradient Boosting are less sensitive to multicollinearity and can handle correlated features effectively.
-o	For linear models, feature selection or regularisation techniques are critical to mitigate the impact of multicollinearity.
+     
+     o	Tree-based models like Random Forests and Gradient Boosting are less sensitive to multicollinearity and can handle correlated features effectively.
+
+     o	For linear models, feature selection or regularisation techniques are critical to mitigate the impact of multicollinearity.
 
 
 
 
 **Conclusion**
 The analysis of cell nuclei features in the Wisconsin Diagnostic Breast Cancer dataset reveals that nucleus size, shape, smoothness, and concavity are significant indicators for differentiating malignant from benign tumours. By applying machine learning models, we achieve a classification system capable of accurately predicting malignancy.
+
 Key findings suggest that features like radius_mean, area_mean, smoothness_mean, and concavity_mean play a crucial role in predicting tumour malignancy. These findings can be instrumental in developing tools for early breast cancer detection, aiding healthcare professionals in making informed, data-driven decisions.
  
 **Future Work**
-•	Model Enhancements: Future work may involve fine-tuning the model using more sophisticated algorithms like support vector machines (SVM) or ensemble methods.
-•	Data Augmentation: Exploring additional datasets with a more diverse set of patient backgrounds to improve model generalization.
-•	Deep Learning: Utilizing deep learning models, such as convolutional neural networks (CNNs), to classify tumours based on image data, potentially improving performance in image-based diagnostics.
+•	Data Augmentation: Exploring additional datasets with a more diverse set of patient backgrounds and larger datsets to improve model generalisation and accuracy. 
+
+•	Deep Learning: Utilising deep learning models, such as convolutional neural networks (CNNs), to classify tumours based on image data, potentially improving performance in image-based diagnostics.
  
 
 
